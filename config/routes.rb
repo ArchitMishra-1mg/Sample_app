@@ -7,11 +7,12 @@ Rails.application.routes.draw do
   ## get 'static/help'
   ## get 'static/about'
   #
-  ## changin the above methods to newer and better ones.
+  ## changing the above methods to newer and better ones.
 
   get '/help', to: 'static#help'
   get '/about', to: 'static#about'
   get '/signup', to: 'users#new'
+  resources :users                  ## dk how its functioning...
 
   ## get '/home', to: 'static#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
