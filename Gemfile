@@ -11,6 +11,8 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 gem 'bootstrap-sass', '3.4.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
+# using faker to generate fake accounts on our website, for showing all users.
+gem 'faker', '2.1.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -23,6 +25,9 @@ gem 'bcrypt', '3.1.13'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+# the following two gems are for pagination of all users show feature.
+gem 'will_paginate', '3.3.0'
+gem 'bootstrap-will_paginate', '1.0.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

@@ -1,0 +1,21 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<!--<ul class="users">-->
+  <%# @users.each do |user| %>
+<!--    <li>-->
+      <%#= gravatar_for user, size: 50 %>
+      <%#= link_to user.name, user %>
+<!--    </li>-->
+  <%# end %>
+<!--</ul>-->
+<!--   # renders auto iterates over the obj if its a collection, and searches for a partial-->
+<!--   # with the name corresponding to class name of object.-->
+
+<ul class="users">
+  <%= render @users %>
+</ul>
+
+<%= will_paginate %>
